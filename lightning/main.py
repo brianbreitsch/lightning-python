@@ -130,7 +130,7 @@ class Lightning(object):
         (e.g. lightning.scatter, lightning.line, etc.) which do automatic parsing and formatting.
         """
 
-        from types.plots import Generic
+        from lightning import Generic
         
         viz = Generic.baseplot(self.session, type=type, **kwargs)
         self.session.visualizations.append(viz)
